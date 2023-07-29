@@ -33,7 +33,7 @@ html{
 
 .user-detail{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,3 +98,84 @@ html{
     margin-top: 10px;
     cursor: pointer;
 }
+
+
+/* responsive styling */
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+
+    html{
+        background-size: 100% 158vw;
+    }
+
+    .individual-profile{
+        margin: 50px 0px;
+        min-height: 100vh;
+    }
+
+    .profile{
+        width: 78%;
+    }
+}
+
+@media screen and (min-width:620px) and (max-width:768px){
+    .profile{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    html{
+        background-size: 100% 158vw;
+    }
+
+    .individual-profile{
+        margin: 50px 0px;
+        min-height: 100vh;
+    }
+
+    .user-detail{
+        padding: 1em 0em;
+    }
+
+    .profile{
+        width: 80%;
+    }
+
+    .detail{
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    html{
+        background-size: 100% 158vw;
+    }
+
+    .individual-profile{
+        margin: 50px 0px;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {
+    .profile{
+        width: 70%;
+    }
+}
+@media screen and (min-width:901px) and (max-width:1000px) {
+    .profile{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1200px) {
+    .profile{
+        width: 50%;
+    }
+}
+
+
+

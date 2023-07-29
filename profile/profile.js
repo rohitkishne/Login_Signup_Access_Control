@@ -6,6 +6,12 @@ const logoutBtn = document.getElementById('logout-btn')
 
 const currentUser = JSON.parse(sessionStorage.getItem('loggedInUser'))
 
+// no user without token cannot access their profile
+if(currentUser === null)
+{
+    location.href = '../index.html'
+}
+
 const referenceToken = currentUser.userToken;
 
 fullName.innerText = currentUser.userName;

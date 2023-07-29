@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-section">
+      <section class="signup">
+        <div class="welcome">Welcome back! &#128075;</div>
+        <div class="create-account">Signup to your account</div>
+        <form id="signup-form" class="signup-form">
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-field">
+            <label for="confirmPassword">Confirm password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirm-password"
+            />
+          </div>
+          <button type="submit" id="signupbtn" class="signupbtn">Continue</button>
+        </form>
+      </section>
+      <section class="not-already-user">
+        <div class="signup-with-msg">
+            <p>Don't have an account?</p>
+            <button id="redirect-to-signup" class="redirect-to-signup">Sign up</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
